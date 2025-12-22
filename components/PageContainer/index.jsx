@@ -1,14 +1,14 @@
 import ClassNames from "classnames";
 import styles from "./styles.module.scss";
 
-export default function MainContainer({
+export default function PageContainer({
     children,
     className,
     ...props
 }) {
   return (
     <div
-        className={ClassNames(styles.MainContainer, className)}
+        className={ClassNames(styles.PageContainer, className)}
         {...props}
     >
         {children}

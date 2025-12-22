@@ -1,4 +1,4 @@
-.MainContainer {
+.PageContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -6,7 +6,11 @@
     justify-content: center;
     min-height: 100vh;
     max-width: 480px;
-    margin: 0 auto;
+    margin: 1rem auto;
 
     // border: 1px solid #444;
+
+    > * {
+        margin: 0.5rem 0;
+    }
 }

@@ -1,20 +1,22 @@
+@use "@/styles/vars.scss" as *;
+
 .Button {
     width: 100%;
     display: flex;
-    border: 1px #888 solid;
+    border: 1px $primary-color solid;
     background-color: #eee;
     border: {
         radius: 10px;
     }
-    box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.25);
-    margin: 2rem;
+
+    transition: box-shadow 0.2s;
 
     &:hover {
-        box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.75);
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.25);
     }
 
     &, a, a:hover, a:active, a:focus, a:visited {
-        color: #888;
+        color: $primary-color;
         text-decoration: none;
     }
 
@@ -23,6 +25,9 @@
         flex: 1;
         height: 2rem;
         display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         
         > .Icon {
             position: relative;

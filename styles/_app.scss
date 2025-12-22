@@ -1,3 +1,5 @@
+@use "@/styles/vars.scss" as *;
+
 html, body {
   margin: 0;
   padding: 0;
@@ -5,6 +7,6 @@ html, body {
 
 body {
   background: #ccc;
-  color: #444;
+  color: $primary-color;
   font-family: Arial, Helvetica, sans-serif;
 }
