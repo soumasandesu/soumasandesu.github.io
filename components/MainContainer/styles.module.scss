@@ -1,0 +1,12 @@
+.MainContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 480px;
+    margin: 0 auto;
+
+    // border: 1px solid #444;
+}

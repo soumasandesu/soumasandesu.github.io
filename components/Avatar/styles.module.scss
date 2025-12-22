@@ -1,0 +1,13 @@
+.Avatar {
+    width: 100%;
+    display: flex;
+
+    > .AvatarImageContainer {
+        position: relative;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}

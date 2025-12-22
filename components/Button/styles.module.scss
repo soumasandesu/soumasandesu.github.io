@@ -1,0 +1,38 @@
+.Button {
+    width: 100%;
+    display: flex;
+    border: 1px #888 solid;
+    background-color: #eee;
+    border: {
+        radius: 10px;
+    }
+    box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.25);
+    margin: 2rem;
+
+    &:hover {
+        box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.75);
+    }
+
+    &, a, a:hover, a:active, a:focus, a:visited {
+        color: #888;
+        text-decoration: none;
+    }
+
+    > a {
+        padding: 1rem;
+        flex: 1;
+        height: 2rem;
+        display: flex;
+        
+        > .Icon {
+            position: relative;
+            width: 2rem;
+            height: 2rem;
+            margin-right: 1rem;
+        }
+
+        > .Text {
+            flex: 1;
+        }
+    }
+}
