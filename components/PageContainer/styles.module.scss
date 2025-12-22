@@ -1,16 +1,18 @@
+$margin: 1rem;
+
 .PageContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: calc(100vh - $margin * 2);
     max-width: 480px;
-    margin: 1rem auto;
+    margin: $margin auto;
 
     // border: 1px solid #444;
 
     > * {
-        margin: 0.5rem 0;
+        margin: ($margin / 2) 0;
     }
 }
