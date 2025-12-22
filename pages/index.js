@@ -1,15 +1,16 @@
-import PageContainer from "@/components/PageContainer";
+import Page from "@/components/Page";
 import Avatar from "@/components/Avatar";
 import Header from "@/components/Header";
-import SectionContainer from "@/components/SectionContainer";
+import Section from "@/components/Section";
 import Button from "@/components/Button";
 import Footer from "@/components/Footer";
 import SelfIntro from "@/components/SelfIntro";
+import ImageGallery from "@/components/ImageGallery";
 
 export default function Home() {
   return (
-    <PageContainer>
-      <SectionContainer>        
+    <Page>
+      <Section>        
         <Avatar
           src="https://yt3.googleusercontent.com/S_yS7rBeiQKooTgarK9zbt9J7IT4cFYJiYGG47jiQxy6y2AtDeUiBBh1hI61J6qbtvFVyZmo=s160-c-k-c0x00ffffff-no-rj"
         />
@@ -19,9 +20,9 @@ export default function Home() {
         <SelfIntro>
           (Self intro tbc.)
         </SelfIntro>
-      </SectionContainer>
+      </Section>
 
-      <SectionContainer>
+      <Section>
         <Button
           icon="/sns/instagram.svg"
           href="https://www.instagram.com/soumasandesu_cos"
@@ -62,11 +63,11 @@ export default function Home() {
             @soumasandesu
           </code>
         </Button>
-      </SectionContainer>
+      </Section>
 
       <Footer>
         2025-12-22
       </Footer>
-    </PageContainer>
+    </Page>
   );
 }

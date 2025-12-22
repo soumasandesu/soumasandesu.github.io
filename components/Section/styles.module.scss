@@ -1,6 +1,6 @@
 $margin: 1rem;
 
-.SectionContainer {
+.Section {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -8,9 +8,7 @@ $margin: 1rem;
     align-items: center;
     justify-content: center;
 
-    padding: 0 $margin;
-
     > * {
-        margin: ($margin / 2) 0;
+        margin: calc($margin / 2) 0;
     }
 }

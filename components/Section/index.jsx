@@ -1,13 +1,13 @@
 import ClassNames from "classnames";
 import styles from "./styles.module.scss";
 
-export default function SectionContainer({
+export default function Section({
     children,
     className,
     ...props
 }) {
     return (
-        <div className={ClassNames(styles.SectionContainer, className)} {...props}>
+        <div className={ClassNames(styles.Section, className)} {...props}>
             {children}
         </div>
     );
