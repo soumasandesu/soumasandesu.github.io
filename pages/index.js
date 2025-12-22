@@ -5,11 +5,15 @@ import Section from "@/components/Section";
 import Button from "@/components/Button";
 import Footer from "@/components/Footer";
 import SelfIntro from "@/components/SelfIntro";
-import ImageGallery from "@/components/ImageGallery";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <Page>
+      <Head>
+        <title>Souma 相馬</title>
+      </Head>
+
       <Section>        
         <Avatar
           src="https://yt3.googleusercontent.com/S_yS7rBeiQKooTgarK9zbt9J7IT4cFYJiYGG47jiQxy6y2AtDeUiBBh1hI61J6qbtvFVyZmo=s160-c-k-c0x00ffffff-no-rj"
