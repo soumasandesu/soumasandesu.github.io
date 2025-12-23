@@ -1,7 +1,9 @@
+@use "@/styles/vars.scss" as *;
+
 .SelfIntro {
     width: 100%;
     text-align: center;
 
-    color: rgba(136, 136, 136, 0.8);
+    color: $primary-color;
     font-size: 0.7rem;
 }

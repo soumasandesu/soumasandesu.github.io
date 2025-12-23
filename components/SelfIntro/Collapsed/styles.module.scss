@@ -1,0 +1,61 @@
+@use "@/styles/vars.scss" as *;
+
+.SelfIntroCollapsed {
+    width: 100%;
+    text-align: center;
+    color: $primary-color;
+    font-size: 0.7rem;
+
+    .ShowMoreButton {
+        width: 100%;
+        cursor: pointer;
+        color: $primary-color;
+        background: none;
+        border: {
+            width: 0;
+            bottom: {
+                width: 1px;
+                color: $primary-color;
+                style: dashed;
+            }
+        }
+        font: {
+            style: italic;
+        }
+        opacity: 0.25;
+        line-height: 0.01rem;
+        transition: max-height 0.1s ease-in-out, opacity 0.1s ease-in-out, margin-top 0.1s ease-in-out;
+
+        &.Hidden {
+            max-height: 0;
+            opacity: 0;
+            margin-top: -1rem;
+        }
+
+        > span {
+            background-color: $background-color;
+            padding: 0 0.25rem;
+        }
+    }
+
+    .Collapsed {
+        border: {
+            width: 1px;
+            style: dashed;
+            color: $primary-color;
+            radius: 10px;
+        }
+        margin: 0 -1rem;
+        padding: 0 1rem;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.1s ease-in-out, opacity 0.1s ease-in-out;
+
+        &.Opened {
+            cursor: pointer;
+
+            max-height: 500px;
+            opacity: 1;
+        }
+    }
+}

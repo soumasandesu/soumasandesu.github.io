@@ -12,3 +12,5 @@ export default function SelfIntro({
         </div>
     );
 }
+
+export { default as Collapsed } from "./Collapsed";
