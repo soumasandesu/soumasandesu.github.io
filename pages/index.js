@@ -50,9 +50,9 @@ export default function Home() {
           <p>
             Worked on projects from infrastructure to full-stack, 
             <br/>
-            in a major e-commerce platform company.
+            in a major platform company.
             <br/>
-            喺大型電子商貿平台公司負責過由 infrastructure 到 full-stack 嘅 project。
+            喺某大型平台公司負責過由 infrastructure 到 full-stack 嘅 project。
           </p>
         </SelfIntroCollapsed>
       </Section>
