@@ -1,0 +1,48 @@
+@use "@/styles/vars.scss" as *;
+
+.PagesNavigator {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @media screen and (min-width: 640px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100vh;
+        z-index: 1000;
+        padding: {
+            left: 0.5rem;
+        }
+        flex-direction: column;
+    }
+
+    color: $primary-color;
+    font: {
+        size: 0.7rem;
+    }
+
+    > * {
+        margin: 0.5rem 0;
+    }
+
+    a {
+        color: $primary-color;
+        text-decoration: underline 1px $primary-color dashed;
+        opacity: 0.5;
+        transition: opacity 0.1s;
+
+        &:hover {
+            opacity: 1;
+            > span {
+                background-color: rgba(#fff, 0.5);
+            }
+        }
+
+        > span {
+            padding: 0.25rem;
+        }
+    }
+}

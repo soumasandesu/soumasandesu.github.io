@@ -25,7 +25,7 @@ export default function Home() {
         </Header>
         <SelfIntroCollapsed>
           <p>
-            A jack of all trades — cosplayer, IT guy, you name it — but master of none.
+            A jack of all trades — cosplayer, IT guy, motorider, ... — but master of none.
             <br/>
             周身刀，唔知係咪每張利嘅 Cosplayer / IT9 / 26友 / ……
           </p>
