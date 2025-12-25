@@ -7,7 +7,17 @@ import Footer from "@/components/Footer";
 import SelfIntro, { Collapsed as SelfIntroCollapsed } from "@/components/SelfIntro";
 import Head from "next/head";
 
-export default function Home() {
+export async function getStaticProps() {
+  const buildDate = new Date().toISOString().split('T')[0];
+  
+  return {
+    props: {
+      buildDate,
+    },
+  };
+}
+
+export default function Home({ buildDate }) {
   return (
     <Page>
       <Head>
@@ -79,6 +89,16 @@ export default function Home() {
           </code>
         </Button>
         <Button
+          icon="/sns/bluesky.svg"
+          href="https://bsky.app/profile/soumasandesu.bsky.social"
+        >
+          Bluesky
+          <br/>
+          <code>
+            @soumasandesu.bsky.social
+          </code>
+        </Button>
+        <Button
           icon="/sns/facebook.svg"
           href="https://www.facebook.com/scohuamralhiierpoooomni"
         >
@@ -101,7 +121,7 @@ export default function Home() {
       </Section>
 
       <Footer>
-        2025-12-22
+        {buildDate}
       </Footer>
     </Page>
   );
