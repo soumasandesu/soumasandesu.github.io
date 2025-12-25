@@ -65,6 +65,14 @@ export default function Home({ buildDate }) {
             喺某大型平台公司負責過由 infrastructure 到 full-stack 嘅 project。
           </p>
         </SelfIntroCollapsed>
+        <SelfIntroCollapsed>
+          <p>
+            Dream 夢想：
+          </p>
+          <ul>
+            <li>Go to ACG events in different countries and cosplay.&nbsp;&nbsp;去各國嘅 event 出 cos。</li>
+          </ul>
+        </SelfIntroCollapsed>
       </Section>
 
       <Section>
