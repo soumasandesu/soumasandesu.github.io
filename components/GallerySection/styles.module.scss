@@ -1,0 +1,19 @@
+@use "@/styles/vars.scss" as *;
+
+.GallerySection {
+    h2 > a {
+        color: $primary-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline dashed;
+
+            &::before {
+                content: "#";
+                font-size: 1rem;
+                margin-left: -1rem;
+                padding-right: 0.5rem;
+            }
+        }
+    }
+}
