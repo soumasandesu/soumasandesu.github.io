@@ -9,7 +9,7 @@ import Head from "next/head";
 
 export async function getStaticProps() {
   const buildDate = new Date().toISOString().split('T')[0];
-  
+
   return {
     props: {
       buildDate,
@@ -24,44 +24,44 @@ export default function Home({ buildDate }) {
         <title>Souma 相馬</title>
       </Head>
 
-      <Section>        
+      <Section>
         <Avatar
           src="https://yt3.googleusercontent.com/S_yS7rBeiQKooTgarK9zbt9J7IT4cFYJiYGG47jiQxy6y2AtDeUiBBh1hI61J6qbtvFVyZmo=s160-c-k-c0x00ffffff-no-rj"
         />
         <Header>
           Souma
-          <br/>
+          <br />
           相馬
         </Header>
         <SelfIntroCollapsed>
           <p>
             A jack of all trades — cosplayer, IT guy, motorider, ... — but master of none.
-            <br/>
+            <br />
             周身刀，唔知係咪每張利嘅 Cosplayer / IT9 / 26友 / ……
           </p>
           <p>
-            Been coding since secondary education, 
-            <br/>
+            Been coding since secondary education,
+            <br />
             and even having some achievements on the HKGolden long time ago.
-            <br/>
+            <br />
             讀中學嘅時候已經識揼 code ，甚至喺好多年前嘅高登就已經小有成就。
           </p>
           <p>
-            In university, I accidentally joined the ACG Society, 
-            <br/>
-            organized some events, and started cosplaying at the same time. 
-            <br/>
+            In university, I accidentally joined the ACG Society,
+            <br />
+            organized some events, and started cosplaying at the same time.
+            <br />
             (Might even accidentally created the precedent of having Cosplayer Event Helper.)
-            <br/>
+            <br />
             大學時期誤打誤撞入咗漫 soc ，搞過吓活動，順勢嗰時開始出 cos 。
-            <br/>
+            <br />
             （甚至唔覺意開創咗 cos event staff 嘅先河。）。
           </p>
           <p>
-            Worked on projects from infrastructure to full-stack, 
-            <br/>
+            Worked on projects from infrastructure to full-stack,
+            <br />
             in a major platform company.
-            <br/>
+            <br />
             喺某大型平台公司負責過由 infrastructure 到 full-stack 嘅 project。
           </p>
         </SelfIntroCollapsed>
@@ -70,7 +70,11 @@ export default function Home({ buildDate }) {
             Dream 夢想：
           </p>
           <ul>
-            <li>Go to ACG events in different countries and cosplay.&nbsp;&nbsp;去各國嘅 event 出 cos。</li>
+            <li>
+              Go to ACG events in different countries and cosplay.
+              <br />
+              去各國嘅 event 出 cos。
+            </li>
           </ul>
         </SelfIntroCollapsed>
       </Section>
@@ -88,7 +92,7 @@ export default function Home({ buildDate }) {
         </Button>
         <Button
           icon="/sns/threads.svg"
-          href="https://www.threads.com/soumasandesu_cos"
+          href="https://www.threads.com/@soumasandesu_cos"
         >
           Instagram
           <br />
@@ -101,7 +105,7 @@ export default function Home({ buildDate }) {
           disabled
         >
           X
-          <br/>
+          <br />
           <code>
             @
           </code>
@@ -111,7 +115,7 @@ export default function Home({ buildDate }) {
           href="https://bsky.app/profile/soumasandesu.bsky.social"
         >
           Bluesky
-          <br/>
+          <br />
           <code>
             @soumasandesu.bsky.social
           </code>
@@ -121,7 +125,7 @@ export default function Home({ buildDate }) {
           href="https://www.facebook.com/scohuamralhiierpoooomni"
         >
           Facebook
-          <br/>
+          <br />
           <code>
             @scohuamralhiierpoooomni
           </code>
@@ -131,7 +135,7 @@ export default function Home({ buildDate }) {
           href="https://github.com/soumasandesu"
         >
           GitHub
-          <br/>
+          <br />
           <code>
             @soumasandesu
           </code>
