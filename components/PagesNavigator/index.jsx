@@ -13,17 +13,17 @@ export default function PagesNavigator({
             className={ClassNames(styles.PagesNavigator, className)}
             {...props}
         >
-            {items?.map(({ name, url}) => (
-                <Link
-                    className={ClassNames(styles.Link, className)}
-                    href={url}
-                    key={name}
-                    title={name}
-                >
-                    <span>
-                        {name}
-                    </span>
-                </Link>
+            {items?.map(({ name, url }) => (
+                <span key={name} className={ClassNames(styles.Link, className)}>
+                    <Link
+                        href={url}
+                        title={name}
+                    >
+                        <span>
+                            {name}
+                        </span>
+                    </Link>
+                </span>
             )) || children}
         </div>
     );
