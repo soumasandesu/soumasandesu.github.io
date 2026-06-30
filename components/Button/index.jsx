@@ -10,11 +10,12 @@ export default function Button({
     } = {},
     icon,
     children,
+    disabled,
     ...props
 }) {
   return (
     <div
-        className={ClassNames(styles.Button, className)}
+        className={ClassNames(styles.Button, className, disabled && styles.Disabled)}
         {...containerProps}
     >
         <a

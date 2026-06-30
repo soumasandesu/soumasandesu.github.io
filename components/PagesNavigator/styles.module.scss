@@ -10,7 +10,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 300px;
+        width: 150px;
         height: 100vh;
         z-index: 1000;
         padding: {
@@ -37,7 +37,7 @@
         &:hover {
             opacity: 1;
             > span {
-                background-color: rgba(#fff, 0.5);
+                background-color: rgba(#fff, 0.8);
             }
         }
 

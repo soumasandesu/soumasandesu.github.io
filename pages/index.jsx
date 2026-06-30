@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
 import Footer from "@/components/Footer";
-import SelfIntro, { Collapsed as SelfIntroCollapsed } from "@/components/SelfIntro";
+import { Collapsed as SelfIntroCollapsed } from "@/components/SelfIntro";
 import Head from "next/head";
 
 export async function getStaticProps() {
@@ -81,19 +81,29 @@ export default function Home({ buildDate }) {
           href="https://www.instagram.com/soumasandesu_cos"
         >
           Instagram
-          <br/>
+          <br />
+          <code>
+            @soumasandesu_cos
+          </code>
+        </Button>
+        <Button
+          icon="/sns/threads.svg"
+          href="https://www.threads.com/soumasandesu_cos"
+        >
+          Instagram
+          <br />
           <code>
             @soumasandesu_cos
           </code>
         </Button>
         <Button
           icon="/sns/x.svg"
-          href="https://x.com/souma_san_desu"
+          disabled
         >
           X
           <br/>
           <code>
-            @souma_san_desu
+            @
           </code>
         </Button>
         <Button

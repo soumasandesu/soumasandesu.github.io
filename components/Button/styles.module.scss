@@ -11,7 +11,7 @@
 
     transition: box-shadow 0.1s, transform 0.1s, background-color 0.1s;
 
-    &:hover {
+    &:not(.Disabled):hover {
         box-shadow: 0 0 0.5rem 0 rgba(#000, 0.25);
         transform: scale(1.05);
         background-color: #fff;
@@ -41,5 +41,10 @@
         > .Text {
             flex: 1;
         }
+    }
+
+    &.Disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
     }
 }
