@@ -5,18 +5,17 @@
     justify-content: center;
 
     max-width: unset;
-    width: calc(100% - 400px);
     margin: unset;
-    padding: 1rem 200px;
+    padding: 0 auto;
 
     background-color: #000;
 
     .GalleryGrid {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;   
+        justify-content: center;
 
-        > * {
+        >* {
             margin: 1rem;
         }
     }

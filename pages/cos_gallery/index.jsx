@@ -32,8 +32,8 @@ export default function CosGallery() {
                         {
                             src: "/cos-img/20260103-rg33-awe-zandernetherbrand20/DSC00120a.jpg",
                             alt: "DSC00120a",
-                            width: 400,
-                            height: 267,
+                            width: 300,
+                            height: 200,
                         },
                         {
                             src: "/cos-img/20260103-rg33-awe-zandernetherbrand20/IMG_2182a.jpg",
@@ -44,8 +44,8 @@ export default function CosGallery() {
                         {
                             src: "/cos-img/20260103-rg33-awe-zandernetherbrand20/IMG_2184a.jpg",
                             alt: "IMG_2184a",
-                            width: 400,
-                            height: 267,
+                            width: 300,
+                            height: 200,
                         },
                         {
                             src: "/cos-img/20260103-rg33-awe-zandernetherbrand20/IMG_2185a.jpg",
@@ -54,13 +54,19 @@ export default function CosGallery() {
                             height: 300,
                         },
                     ].map((img) => (
-                        <Image
-                            key={img.src}
-                            src={img.src}
-                            alt={img.alt}
-                            width={img.width}
-                            height={img.height}
-                        />
+                        <a
+                            key={img.alt}
+                            href={img.src}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                src={img.src}
+                                alt={img.alt}
+                                width={img.width}
+                                height={img.height}
+                            />
+                        </a>
                     ))}
 
                 </div>
