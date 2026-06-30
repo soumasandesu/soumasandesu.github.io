@@ -13,18 +13,21 @@
         width: 150px;
         height: 100vh;
         z-index: 1000;
+
         padding: {
             left: 0.5rem;
         }
+
         flex-direction: column;
     }
 
     color: $primary-color;
+
     font: {
         size: 0.7rem;
     }
 
-    > * {
+    >* {
         margin: 0.5rem 0;
     }
 
@@ -36,13 +39,15 @@
 
         &:hover {
             opacity: 1;
-            > span {
+
+            >span {
                 background-color: rgba(#fff, 0.8);
             }
         }
 
-        > span {
+        >span {
             padding: 0.25rem;
+            background-color: rgba(#000, 0.5);
         }
     }
 }
