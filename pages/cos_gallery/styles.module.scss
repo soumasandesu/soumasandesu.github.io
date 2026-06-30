@@ -1,0 +1,23 @@
+.CosGalleryPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-width: unset;
+    width: calc(100% - 400px);
+    margin: unset;
+    padding: 1rem 200px;
+
+    background-color: #000;
+
+    .GalleryGrid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        > * {
+            margin: 1rem;
+        }
+    }
+}
