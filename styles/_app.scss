@@ -9,4 +9,8 @@ body {
   background: $background-color;
   color: $primary-color;
   font-family: Arial, Helvetica, sans-serif;
+
+  :has(.page.dark) {
+    background-color: #000;
+  }
 }

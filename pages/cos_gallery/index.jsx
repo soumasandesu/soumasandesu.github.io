@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 
 import Page from "@/components/Page";
@@ -6,7 +7,10 @@ import styles from "./styles.module.scss";
 
 export default function CosGallery() {
     return (
-        <Page className={styles.CosGalleryPage}>
+        <Page className={styles.CosGalleryPage} dark>
+            <Head>
+                <title>Cos Gallery</title>
+            </Head>
 
             <GallerySection title="2026-01-03 RG33 Zander Netherbrand 2.0" anchorId="rg33-zander-netherbrand-20">
                 <div className={styles.GalleryGrid}>

@@ -1,6 +1,5 @@
 import PagesNavigator from "@/components/PagesNavigator";
 import "@/styles/_app.scss";
-import Link from "next/link";
 
 export default function App({ Component, pageProps }) {
   return (

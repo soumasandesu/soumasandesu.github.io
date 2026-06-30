@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import Page from "@/components/Page";
 import Avatar from "@/components/Avatar";
 import Header from "@/components/Header";
@@ -5,7 +7,6 @@ import Section from "@/components/Section";
 import Button from "@/components/Button";
 import Footer from "@/components/Footer";
 import { Collapsed as SelfIntroCollapsed } from "@/components/SelfIntro";
-import Head from "next/head";
 
 export async function getStaticProps() {
   const buildDate = new Date().toISOString().split('T')[0];
