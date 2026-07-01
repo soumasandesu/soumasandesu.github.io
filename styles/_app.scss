@@ -7,6 +7,7 @@ html, body {
 
 body {
   background: $background-color;
+  transition: background-color 0.15s ease;
   color: $primary-color;
   font-family: Arial, Helvetica, sans-serif;
 
