@@ -7,14 +7,4 @@
     max-width: unset;
     margin: unset;
     padding: 0 auto;
-    
-    .GalleryGrid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        >* {
-            margin: 1rem;
-        }
-    }
 }
