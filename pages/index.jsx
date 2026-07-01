@@ -95,7 +95,7 @@ export default function Home({ buildDate }) {
           icon="/sns/threads.svg"
           href="https://www.threads.com/@soumasandesu_cos"
         >
-          Instagram
+          Threads
           <br />
           <code>
             @soumasandesu_cos
