@@ -16,14 +16,11 @@ export default function Avatar({
     initPos,
     ...props
 }) {
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+    const [emblaRef, emblaApi] = useEmblaCarousel({
+        loop: true,
+        startIndex: initPos,
+    });
     const { selectedIndex, onDotButtonClick } = useDotButton(emblaApi);
-
-    useEffect(() => {
-        if (emblaApi) {
-            emblaApi.scrollTo(initPos);
-        }
-    }, [emblaApi, initPos]);
 
     return (
         <div className={ClassNames(styles.Avatar, className)} {...containerProps}>
