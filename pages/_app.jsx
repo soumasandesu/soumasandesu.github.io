@@ -8,6 +8,7 @@ export default function App({ Component, pageProps }) {
         items={[
           { name: "main", url: "/" },
           { name: "cos gallery", url: "/cos_gallery" },
+          { name: "3d showcases", url: "/3d_showcases" },
         ]}
       />
       <Component {...pageProps} />
