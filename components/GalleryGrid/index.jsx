@@ -10,22 +10,27 @@ export default function GalleryGrid({
 }) {
     return (
         <div className={styles.GalleryGrid}>
-            {images.map((img) => {
-                const full = path.join('/cos-img', img.src);
-                const thumb = path.join('/cos-img-thumbnails', img.src);
+            {images.map(({
+                alt,
+                src,
+                width,
+                height,
+            }) => {
+                const full = path.join('/cos-img', '2048', src);
+                const thumb = path.join('/cos-img', '400', src);
 
                 return (
                     <a
-                        key={img.alt}
+                        key={alt}
                         href={full}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         <ImageWithFallback
                             src={thumb}
-                            alt={img.alt}
-                            width={img.width}
-                            height={img.height}
+                            alt={alt}
+                            width={width}
+                            height={height}
                             unoptimized
                             fallbackSrc={full}
                         />
