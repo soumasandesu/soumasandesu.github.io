@@ -27,7 +27,16 @@ export default function Home({ buildDate }) {
 
       <Section>
         <Avatar
-          src="https://yt3.googleusercontent.com/S_yS7rBeiQKooTgarK9zbt9J7IT4cFYJiYGG47jiQxy6y2AtDeUiBBh1hI61J6qbtvFVyZmo=s160-c-k-c0x00ffffff-no-rj"
+          srcSet={[
+            '/avatars/-2.jpg',
+            '/avatars/-1.jpg',
+            '/avatars/0.jpg',
+            '/avatars/1.jpg',
+            '/avatars/2.jpg',
+            '/avatars/3.jpg',
+            '/avatars/4.jpg',
+          ]}
+          initPos={3}
         />
         <Header>
           Souma
