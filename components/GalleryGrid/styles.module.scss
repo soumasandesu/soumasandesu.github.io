@@ -1,3 +1,5 @@
+@use "@/styles/vars.scss" as *;
+
 .GalleryGrid {
     display: flex;
     flex-wrap: wrap;
@@ -5,5 +7,9 @@
 
     >* {
         margin: 1rem;
+    }
+
+    a {
+        color: $primary-color !important;
     }
 }
