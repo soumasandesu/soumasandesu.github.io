@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ImageWithFallback from "./ImageWithFallback";
 
 import styles from "./styles.module.scss";
 
@@ -15,12 +15,13 @@ export default function GalleryGrid({
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <Image
+                    <ImageWithFallback
                         src={`/cos-img-thumbnails/${img.src}`}
                         alt={img.alt}
                         width={img.width}
                         height={img.height}
                         unoptimized
+                        fallbackSrc={`/cos-img/${img.src}`}
                     />
                 </a>
             ))}
