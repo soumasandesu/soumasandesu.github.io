@@ -45,5 +45,5 @@ function processDirectory(currentSourceDir, currentOutputDir, maxWidth, maxHeigh
 
 const SOURCE_DIR = path.join(__dirname, '../_public/cos-img');
 console.log('Starting recursive thumbnail generation...');
-processDirectory(SOURCE_DIR, path.join(__dirname, '../public/cos-img-400'), 400, 400);
-processDirectory(SOURCE_DIR, path.join(__dirname, '../public/cos-img-2048'), 2048, 2048);
+processDirectory(SOURCE_DIR, path.join(__dirname, '../public/cos-img/400'), 400, 400);
+processDirectory(SOURCE_DIR, path.join(__dirname, '../public/cos-img/2048'), 2048, 2048);
