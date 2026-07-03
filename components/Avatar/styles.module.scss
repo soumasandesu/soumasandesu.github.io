@@ -14,28 +14,28 @@
     }
 
     .Embla {
-        max-width: 120px;
-        margin: auto;
+        $slide-spacing: 1rem;
+        $slide-size: 120px;
 
-        --slide-height: 120px;
-        --slide-spacing: 1rem;
-        --slide-size: 120px;
+        width: 100%;
 
         .Viewport {
+            max-width: $slide-size;
+            margin: auto;
             overflow: hidden;
         }
 
         .Container {
             display: flex;
             touch-action: pan-y pinch-zoom;
-            margin-left: calc(var(--slide-spacing) * -1);
+            margin-left: calc($slide-spacing * -1);
         }
 
         .Slide {
             transform: translate3d(0, 0, 0);
-            flex: 0 0 var(--slide-size);
+            flex: 0 0 $slide-size;
             min-width: 0;
-            padding-left: var(--slide-spacing);
+            padding-left: $slide-spacing;
             cursor: grab;
 
             &:active {
