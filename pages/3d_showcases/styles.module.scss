@@ -1,0 +1,58 @@
+@use "@/styles/vars.scss" as *;
+
+.ThreeDShowcasesPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-width: unset;
+    margin: unset;
+    padding: 0 auto;
+
+    @mixin visible-containment {
+        border: 1px solid $primary-color;
+        border-radius: 1rem;
+    }
+
+    .ShowcaseContainer {
+        flex: 1;
+        width: 100%;
+        @include visible-containment;
+    }
+
+    .Embla {
+        $slide-spacing: 1rem;
+        $slide-width: 214px;
+        $slide-height: 120px;
+
+        flex: 0;
+        width: 100%;
+
+        .Viewport {
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .Container {
+            display: flex;
+            touch-action: pan-y pinch-zoom;
+            margin-left: calc($slide-spacing * -1);
+        }
+
+        .Slide {
+            @include visible-containment;
+            
+            transform: translate3d(0, 0, 0);
+            flex: 0 0 $slide-width;
+            min-width: 0;
+            height: $slide-height;
+            margin-left: $slide-spacing;
+            cursor: grab;
+
+            &:active {
+                cursor: grabbing;
+            }
+        }
+    }
+}
