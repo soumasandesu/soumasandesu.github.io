@@ -1,7 +1,19 @@
 import PagesNavigator from "@/components/PagesNavigator";
+import Footer from "@/components/Footer";
+
 import "@/styles/_app.scss";
 
-export default function App({ Component, pageProps }) {
+export async function getStaticProps() {
+  const buildDate = new Date().toISOString().split('T')[0];
+
+  return {
+    props: {
+      buildDate,
+    },
+  };
+}
+
+export default function App({ Component, pageProps: { buildDate, ...pageProps } }) {
   return (
     <>
       <PagesNavigator
@@ -13,6 +25,9 @@ export default function App({ Component, pageProps }) {
         ]}
       />
       <Component {...pageProps} />
+      <Footer>
+        {buildDate}
+      </Footer>
     </>
   );
 }

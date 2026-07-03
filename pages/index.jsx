@@ -5,20 +5,9 @@ import Avatar from "@/components/Avatar";
 import Header from "@/components/Header";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
-import Footer from "@/components/Footer";
 import { Collapsed as SelfIntroCollapsed } from "@/components/SelfIntro";
 
-export async function getStaticProps() {
-  const buildDate = new Date().toISOString().split('T')[0];
-
-  return {
-    props: {
-      buildDate,
-    },
-  };
-}
-
-export default function Home({ buildDate }) {
+export default function Home() {
   return (
     <Page>
       <Head>
@@ -151,10 +140,6 @@ export default function Home({ buildDate }) {
           </code>
         </Button>
       </Section>
-
-      <Footer>
-        {buildDate}
-      </Footer>
     </Page>
   );
 }
