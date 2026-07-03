@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 
 import Page from "@/components/Page";
 import GalleryGrid from "@/components/GalleryGrid";

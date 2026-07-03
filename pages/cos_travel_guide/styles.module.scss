@@ -1,0 +1,45 @@
+.CosTravelGuidePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-width: unset;
+    margin: unset;
+    padding: 0 auto;
+}
+
+.Diary {
+    $main-color: #4a4033;
+
+    background-color: #fff9e6;
+    width: 100%;
+    max-width: 850px;
+    padding: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+
+    &,
+    a {
+        color: $main-color;
+        letter-spacing: 1px;
+    }
+
+    a {
+        text-decoration: 1px dashed underline $main-color;
+        &:hover {
+            text-shadow: 0 0 8px rgba($main-color, 50%);
+        }
+    }
+
+    li {
+        line-height: 1.5rem;
+    }
+
+    .Header {
+        border-bottom: 2px dashed #b39b78;
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+        color: #7a6e5d;
+    }
+}
