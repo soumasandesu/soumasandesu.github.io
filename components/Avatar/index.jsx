@@ -1,9 +1,9 @@
-import { useEffect } from "react";
 import Image from "next/image";
 import ClassNames from "classnames";
 import useEmblaCarousel from 'embla-carousel-react';
 
-import { DotButton, useDotButton } from './DotButton';
+import { DotButton } from './DotButton';
+import { useDotButton } from '../../utils/emblaApi/useDotButton';
 
 import styles from "./styles.module.scss";
 
