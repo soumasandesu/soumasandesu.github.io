@@ -4,20 +4,17 @@
     align-items: center;
     justify-content: center;
 
-    max-width: unset;
     margin: unset;
     padding: 0 auto;
 }
 
 .Diary {
+    width: calc(100% - 4rem);
     $main-color: #4a4033;
 
     background-color: #fff9e6;
-    width: 100%;
-    max-width: 850px;
     padding: 2rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
 
     &,
     a {
