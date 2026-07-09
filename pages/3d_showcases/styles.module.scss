@@ -18,14 +18,12 @@
         border-radius: 1rem;
     }
 
-    :global {
-        a {
-            color: $primary-color;
-            text-decoration: 1px underline dashed;
+    :global(a) {
+        color: $primary-color;
+        text-decoration: underline dashed 1px;
 
-            &:hover {
-                color: $secondary-color;
-            }
+        &:hover {
+            color: $secondary-color;
         }
     }
 
@@ -57,15 +55,15 @@
             padding: 1rem;
             font-size: .8em;
 
-            :global {
-                p, li {
-                    margin-bottom: 1em;
-                }
-
-                hr {
-                    margin: 2em 0;
-                }
+            :global(p),
+            :global(li) {
+                margin-bottom: 1em;
             }
+
+            :global(hr) {
+                margin: 2em 0;
+            }
+       
 
             .FilesList {
                 list-style: none;
