@@ -20,6 +20,9 @@ export default function ThreeDShowcases() {
             </Head>
 
             <div className={styles.ShowcaseContainer}>
+                <div className={styles.Showcase}>
+                    
+                </div>
             </div>
 
             <div className={styles.Embla}>
