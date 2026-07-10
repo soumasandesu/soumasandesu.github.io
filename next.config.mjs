@@ -5,11 +5,11 @@ const nextConfig = {
     rules: {
       '*.yaml': {
         loaders: ['yaml-loader'],
-        as: 'json',
+        as: '*.js',
       },
       '*.yml': {
         loaders: ['yaml-loader'],
-        as: 'json',
+        as: '*.js',
       },
     },
   },
