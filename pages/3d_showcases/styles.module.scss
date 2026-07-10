@@ -122,6 +122,11 @@
             margin-left: $slide-spacing;
             cursor: grab;
 
+            &.Selected {
+                border-color: $secondary-color;
+                box-shadow: 0 0 1rem 0 rgba($secondary-color, 0.5);
+            }
+
             &:active {
                 cursor: grabbing;
             }
