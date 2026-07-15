@@ -13,18 +13,23 @@ export default function PagesNavigator({
             className={ClassNames(styles.PagesNavigator, className)}
             {...props}
         >
-            {items?.map(({ name, url }) => (
-                <span key={name} className={ClassNames(styles.Link, className)}>
-                    <Link
-                        href={url}
-                        title={name}
-                    >
-                        <span>
-                            {name}
-                        </span>
-                    </Link>
-                </span>
-            )) || children}
+            {items?.map(({ name, url, external, target, rel }) => {
+                const Component = external ? "a" : Link;
+                return (
+                    <span key={name} className={ClassNames(styles.Link, className)}>
+                        <Component
+                            href={url}
+                            title={name}
+                            target={target}
+                            rel={rel}
+                        >
+                            <span>
+                                {name}
+                            </span>
+                        </Component>
+                    </span>
+                );
+            }) || children}
         </div>
     );
 }
