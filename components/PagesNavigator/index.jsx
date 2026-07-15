@@ -4,8 +4,7 @@ import Link from "next/link";
 
 export default function PagesNavigator({
     className,
-    children,
-    items,
+    rows,
     ...props
 }) {
     return (
@@ -13,23 +12,28 @@ export default function PagesNavigator({
             className={ClassNames(styles.PagesNavigator, className)}
             {...props}
         >
-            {items?.map(({ name, url, external, target, rel }) => {
-                const Component = external ? "a" : Link;
-                return (
-                    <span key={name} className={ClassNames(styles.Link, className)}>
-                        <Component
-                            href={url}
-                            title={name}
-                            target={target}
-                            rel={rel}
-                        >
-                            <span>
-                                {name}
+            {rows?.map((row, i) => (
+                <div key={i} className={styles.Row}>
+                    {row.map(({ name, url, external, target, rel, ...props }) => {
+                        const Component = external ? "a" : Link;
+                        return (
+                            <span key={name} className={className}>
+                                <Component
+                                    href={url}
+                                    title={name}
+                                    target={target}
+                                    rel={rel}
+                                    {...props}
+                                >
+                                    <span>
+                                        {name}
+                                    </span>
+                                </Component>
                             </span>
-                        </Component>
-                    </span>
-                );
-            }) || children}
+                        );
+                    })}
+                </div>
+            ))}
         </div>
     );
 }
