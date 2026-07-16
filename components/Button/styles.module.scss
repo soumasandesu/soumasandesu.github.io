@@ -8,7 +8,7 @@
     border: {
         radius: 10px;
     }
-
+    line-height: 1.25em;
     transition: box-shadow 0.1s, transform 0.1s, background-color 0.1s;
 
     &:not(.Disabled):hover {
@@ -20,6 +20,10 @@
     &, a, a:hover, a:active, a:focus, a:visited {
         color: $primary-color;
         text-decoration: none;
+    }
+
+    code, pre {
+        font-size: .8em;
     }
 
     > a {
