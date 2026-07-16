@@ -13,7 +13,7 @@ export default function Document() {
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         {
-          [{ property: "og:title" }, { name: "twitter:title" }].map(e => <meta key={JSON.stringify(e)} content="Souma's Link-in-bio" {...e} />)
+          [{ property: "og:title" }, { name: "twitter:title" }].map(e => <meta key={JSON.stringify(e)} content="Souma 相馬" {...e} />)
         }
         {
           [{ property: "og:description" }, { name: "twitter:description" }].map(e => <meta key={JSON.stringify(e)} content="Souma's Link-in-bio" {...e} />)
