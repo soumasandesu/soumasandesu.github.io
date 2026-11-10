@@ -61,7 +61,7 @@ export default function Home({ buildDate }) {
             <br />
             organized some events, and started cosplaying at the same time.
             <br />
-            (Might even accidentally created the precedent of having Cosplayer Event Helper.)
+            (Might even accidentally created the precedent of having Event Helper who also Cosplays.)
             <br />
             大學時期誤打誤撞入咗漫 soc ，搞過吓活動，順勢嗰時開始出 cos 。
             <br />
@@ -70,9 +70,9 @@ export default function Home({ buildDate }) {
           <p>
             Worked on projects from infrastructure to full-stack,
             <br />
-            in a major platform company.
+            in a major platform company. However.
             <br />
-            喺某大型平台公司負責過由 infrastructure 到 full-stack 嘅 project。
+            喺某大型平台公司負責過由 infrastructure 到 full-stack 嘅 project。但係。
           </p>
           <hr />
           <p>
