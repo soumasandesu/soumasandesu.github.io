@@ -5,6 +5,7 @@
     text-align: center;
     color: $primary-color;
     font-size: 0.7rem;
+    line-height: 0.9rem;
 
     .ShowMoreButton {
         width: 100%;
@@ -50,7 +51,7 @@
             color: $primary-color;
             radius: 10px;
         }
-        margin: 0 -1rem;
+        // margin: 0 -1rem;
         padding: 0 1rem;
         max-height: 0;
         opacity: 0;
@@ -68,6 +69,6 @@
         height: 1px;
         font-size: 0;
         border: 0;
-        border-bottom: 1px #999 dashed;
+        border-bottom: 1px #777 dashed;
     }
 }
