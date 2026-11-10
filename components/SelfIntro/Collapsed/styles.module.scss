@@ -63,4 +63,11 @@
             opacity: 1;
         }
     }
+
+    hr {
+        height: 1px;
+        font-size: 0;
+        border: 0;
+        border-bottom: 1px #999 dashed;
+    }
 }

@@ -74,8 +74,7 @@ export default function Home({ buildDate }) {
             <br />
             喺某大型平台公司負責過由 infrastructure 到 full-stack 嘅 project。
           </p>
-        </SelfIntroCollapsed>
-        <SelfIntroCollapsed>
+          <hr />
           <p>
             Dream 夢想：
           </p>
